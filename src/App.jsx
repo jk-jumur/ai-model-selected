@@ -41,7 +41,7 @@ function App() {
               {activeTab === "cart" && <Cart/>} */}
               {activeTab === "model" ? <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}/> : null}
 
-              {activeTab === "cart" ? <Cart carts={carts}/> : null}
+              {activeTab === "cart" ? <Cart carts={carts} setCarts={setCarts}/> : null}
         <Footer/>
         
      
