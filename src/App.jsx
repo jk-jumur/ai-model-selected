@@ -2,7 +2,7 @@
 import './App.css'
 import Banner from './Components/Banner'
 import Footer from './Components/Footer'
-import Model from './Components/Model'
+import Models from './Components/Models'
 import NavBar from './Components/NavBar'
 
 
@@ -21,7 +21,7 @@ function App() {
   
         <NavBar/>
         <Banner/>
-         <Model modelPromise={modelPromise}/>
+         <Models modelPromise={modelPromise}/>
         <Footer/>
         
      
