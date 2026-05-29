@@ -9,7 +9,7 @@ const ModelCard = ({model, carts, setCarts}) => {
           setCarts([...carts, model])
       }
     return (
-         <div className="shadow-lg rounded-lg border-zinc-300 overflow-hidden">
+         <div className="shadow-lg rounded-lg border-zinc-300 overflow-hidden mt-10">
                           <div className="flex justify-center items-center  h-56 bg-zinc-300">
                               <img  className="h-40 w-40 object-contain" src={model.image} alt="" />
                           </div>
