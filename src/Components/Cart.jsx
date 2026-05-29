@@ -1,5 +1,7 @@
 const Cart = ({carts}) => {
-    console.log(carts);
+    // console.log(carts);
+    const totalPrice = carts.reduce((sum, item) => sum + item.price, 0) 
+    console.log(totalPrice)
      return(
         <div className="p-18">
             <h1 className="text-2xl font-bold">Your Cart</h1>
@@ -24,7 +26,7 @@ const Cart = ({carts}) => {
 
             <div className="flex justify-between bg-black text-white p-5 mt-5 rounded-lg text-2xl">
                 <div>Total</div>
-                <div>0</div>
+                <div>${totalPrice}</div>
             </div>
         </div>
      )
