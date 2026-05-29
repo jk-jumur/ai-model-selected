@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 
-const ModelCard = ({model}) => {
+const ModelCard = ({model, carts, setCarts}) => {
       const [isSubscribed, setIsSubscribed] = useState(false)
 
       const handleSubscription = () =>{
           setIsSubscribed(true)
+          setCarts([...carts, model])
       }
     return (
          <div className="shadow-lg rounded-lg border-zinc-300 overflow-hidden">
